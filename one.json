@@ -15,8 +15,8 @@ option = {
             "dataZoom": {
                 "yAxisIndex": "none"
             },
-            "dataView": {readOnly: false},
-            "magicType": {type: ["line", "bar"]},
+            "dataView": {"readOnly": false},
+            "magicType": {"type": ["line", "bar"]},
             "restore": {},
             "saveAsImage": {}
         }
