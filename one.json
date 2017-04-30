@@ -1,55 +1,55 @@
 option = {
-    title: {
-        text: 'Page views',
-        subtext: '25April-30April 2017'
+    "title": {
+        "text": "Page views",
+        "subtext": "25April-30April 2017"
     },
-    tooltip: {
-        trigger: 'axis'
+    "tooltip": {
+        "trigger": "axis"
     },
-    legend: {
-        data:['Page views','Sessions']
+    "legend": {
+        "data":["Page views","Sessions"]
     },
-    toolbox: {
-        show: true,
-        feature: {
-            dataZoom: {
-                yAxisIndex: 'none'
+    "toolbox": {
+        "show": "true",
+        "feature": {
+            "dataZoom": {
+                "yAxisIndex": "none"
             },
-            dataView: {readOnly: false},
-            magicType: {type: ['line', 'bar']},
-            restore: {},
-            saveAsImage: {}
+            "dataView": {readOnly: false},
+            "magicType": {type: ["line", "bar"]},
+            "restore": {},
+            "saveAsImage": {}
         }
     },
-    xAxis:  {
-        type: 'category',
-        boundaryGap: false,
-        data: ['Apr24','Apr25','Apr26','Apr27','Apr28','Apr29','Apr30']
+    "xAxis":  {
+       "type": "category",
+        "boundaryGap": false,
+        "data": ["Apr24","Apr25","Apr26","Apr27","Apr28","Apr29","Apr30"]
     },
-    yAxis: {
-        type: 'value',
-        axisLabel: {
-            formatter: '{value}'
+   "yAxis": {
+        "type": "value",
+        "axisLabel": {
+            "formatter": "{value}"
         }
     },
-    series: [
+    "series": [
         {
-            name:'Page views',
-            type:'line',
-            data:[0, 0, 107, 116, 0, 0, 0],
-            markPoint: {
-                data: [
-                    {type: 'max', name: 'Highest'},
+            "name":"Page views",
+            "type":"line",
+            "data":[0, 0, 107, 116, 0, 0, 0],
+            "markPoint": {
+                "data": [
+                    {type: "max", name: "Highest"},
                 ]
             },
         },
         {
-            name:'Sessions',
-            type:'line',
-            data:[0, 0, 46, 54, 0, 0, 0],
-markPoint: {
-                data: [
-                    {type: 'max', name: 'Highest'},
+            "name":"Sessions",
+            "type":"line",
+            "data":[0, 0, 46, 54, 0, 0, 0],
+"markPoint": {
+                "data": [
+                    {"type": "max", "name": "Highest"},
                 ]
             },
         },
