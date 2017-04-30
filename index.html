@@ -41,8 +41,7 @@
      </div>
     
   <script type="text/javascript">
-		
-        $(function(){
+$(function(){
 		console.log("Enter Jquery Block");
             $.getJSON('one.json',function(data){
 		  
@@ -51,16 +50,14 @@
         // Use the option to display chart
        var myChart1 = echarts.init(document.getElementById('main1'));
       myChart1.setOption(option);
-	    )
-       
-		</script>   
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-96593516-1', 'auto');
-  ga('send', 'pageview');
+	    })
+         $.getJSON('two.json',function(data){
+                var option = data;
+                console.log(data);
+        var myChart2 = echarts.init(document.getElementById('main2'));
+        myChart2.setOption(option);});
+	
+			})
 </script>
     
 
